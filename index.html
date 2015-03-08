@@ -1,740 +1,604 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="@CarlosReyes">
-    <meta name="keywords" content="">
-    <meta name="description" content="">
-    <link rel="shortcut icon" href="">
-<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400' rel='stylesheet' type='text/css'>
-    <title>Lirmi</title>
-    <!-- Bootstrap core CSS -->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="@CarlosReyes">
+        <meta name="keywords" content="">
+        <meta name="description" content="">
+        <link rel="shortcut icon" href="">
+        <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400' rel='stylesheet' type='text/css'>
+        <title>Lirmi</title>
+        <!-- Bootstrap core CSS -->
         <link href="assets/css/jquery.fullPage.css" rel="stylesheet">
-      
-          	<link rel="stylesheet" href="assets/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
-	<link rel="stylesheet" href="assets/fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
-	<link  rel="stylesheet" href="assets/fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
-<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-<link href="assets/css/bootstrap.css" rel="stylesheet">
-    <link href="assets/css/main.css" rel="stylesheet">
-  
-
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-    <![endif]-->
-  </head>
-
-  <body>
-    <!-- Static navbar -->
-    <div class="navbar navbar-inverse navbar-static-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a id="logo" class="navbar-brand" href="index.html"><img src="assets/img/logo_lirmi-01.svg" alt=""></a>
+        <link rel="stylesheet" href="assets/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+        <link rel="stylesheet" href="assets/fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+        <link  rel="stylesheet" href="assets/fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+        <link href="assets/css/main.css" rel="stylesheet">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <!-- Static navbar -->
+        <div class="navbar navbar-inverse navbar-static-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    </button>
+                    <a id="logo" class="navbar-brand" href="index.html"><img src="assets/img/logo_lirmi-01.svg" alt=""></a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
+                    <ul class="nav nav-pills" id="navbar1">
+                        <li class="active" data-menuanchor="firstPage"><a href="#firstPage">Portada</a></li>
+                        <li data-menuanchor="secondPage"><a href="#secondPage">Planificación</a></li>
+                        <li data-menuanchor="3rdPage"><a href="#3rdPage">Evaluación</a></li>
+                        <li data-menuanchor="4thpage"><a href="#4thpage">Remedial</a></li>
+                        <li data-menuanchor="5thpage"><a href="#5thpage">Beneficios</a></li>
+                        <li data-menuanchor="6thpage"><a href="#6thpage">Clientes</a></li>
+                        <li data-menuanchor="7thpage"><a href="#7thpage">Equipo</a></li>
+                    </ul>
+                </div>
+                <!--/.nav-collapse -->
+            </div>
         </div>
- 	<div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
-					<ul class="nav nav-pills" id="navbar1">
-						<li class="active" data-menuanchor="firstPage"><a href="#firstPage">Portada</a></li>
-						<li data-menuanchor="secondPage"><a href="#secondPage">Planificación</a></li>
-						<li data-menuanchor="3rdPage"><a href="#3rdPage">Evaluación</a></li>
-						<li data-menuanchor="4thpage"><a href="#4thpage">Remedial</a></li>
-						<li data-menuanchor="5thpage"><a href="#5thpage">Beneficios</a></li>
-							<li data-menuanchor="6thpage"><a href="#6thpage">Clientes</a></li>
-							<li data-menuanchor="7thpage"><a href="#7thpage">Equipo</a></li>
-					</ul>
-				</div><!--/.nav-collapse -->
-      </div>
-    </div>
-	<!-- +++++ Projects Section +++++ -->
-		<div id="fullpage">
-			<div class="section" id="section1">
-				<div class="container pt"> 
-				<div class="margin-up">
-			<div class="row">
-			<div class="col-lg-3 centered">
-				</div>
-		     <div class="col-lg-6 centered">
-
-		     	<h1>Toda la gestión curricular de tu establecimiento en un solo lugar</h1>
-		     		</div>
-		     	<div class="col-lg-3 centered">
-				</div>
-					</div>
-						<div class="row">
-			<div class="col-lg-3 centered">
-				</div>
-		     <div class="col-lg-6 centered">
-		     	<div class="button">
-	<button class="btn btn-success "  data-toggle="modal" data-target="#myModal" >Solicitar Videoconferencia</button>
-	</div>
-	<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-  Launch demo modal
-</button>
-
-<!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
-		     		</div>
-		     	<div class="col-lg-3 centered">
-				</div>
-					</div>
-		     		<div class="row">
-		     		  <div class="col-lg-3 centered">
-		     		  		</div>
-<div class="col-lg-6 centered">
-		     		     	<div class="descripcion-planificacion">
-		   
-	</div>
-						</div>
-						  <div class="col-lg-3 centered">
-		     		  		</div>
-	</div>
-	<div class="row">
-						<div class="col-lg-4 centered">
-							</div>
-				  <div class="col-lg-4 centered">
-				  	<div class="video">
-					<a class="btn btn-lg btn-play various fancybox.iframe" href="http://www.youtube.com/embed/L9szn1QQfas?autoplay=1"><img src="assets/img/play_icon.svg" alt="">Ver Video</a>
-						</div>
-						</div>
-						<div class="col-lg-4 centered">
-							</div>
-		</div>
-	</div>
-	</div>
-		</div><!-- /container -->
-	
-			<div class="section" id="section2">
-					<div class="container pt"> 
-				<div class="margin-up1">
-				<div class="row">
-
-					    <div class="col-lg-5 centered">
-		     <div class="der">
-		     	<h1><strong>1</strong></h1>
-		     	<h1>Diseña tus planificaciones de forma eficiente y atractiva.</h1>
-		     		
-							<div class="tok">
-						
-						 			<a href="" > <h4 class="tokin-ref">Ir a Tokin, Planificador </h4></a>
-						 </div>
-				
-		     		<div class="rectangulo" id="p-1">
-		     	<h4 >Lirmi te entrega el curriculum nacional actualizado, ordenado y listo para planificar de forma anual, por unidad, semanal o diario. Ademas, tus profesores tendrán acceso a recursos pedagógicos y actividades por objetivo de aprendizaje. "Tu decides como quieres organizar tu trabajo, nosotros lo ordenamos.</h4>
-				</div>
-						<div class="row">
-							<div class="boton-media">
-						 <div class="col-lg-6">
-						 			 	<button class="btn btn-success btn-plani" id="#example1">Solicitar Videoconferencia</button>
-						 	</div>
-						 	<div class="col-lg-6 ">
-					<a class="btn btn-lg btn-play various fancybox.iframe" href="http://www.youtube.com/embed/L9szn1QQfas?autoplay=1"><img src="assets/img/play_icon.svg" alt="">Ver Video</a>
-						 	</div>
-					</div>
-					</div>
-
-					</div>
-		     	</div>
-		     		     <div class="col-lg-1 centered">
-	
-		     	</div>
-
-		     <div class="col-lg-6 centered hidden-xs ">
-		     	<div class="izq">
-					<img src="assets/img/1_planificaciones_lirmi-01.svg" class="img-responsive" alt="">
-					        
-		     	</div>
-		     	</div>
-		     	 
-
-
-							</div>	
-	</div>
-			
-		</div>
-	</div><!-- /container -->
-
-			<div class="section" id="section3">
-				<div class="container pt"> 
-				<div class="margin-up1">
-				<div class="row">
-
-					    <div class="col-lg-5 centered">
-		     <div class="der">
-		     	<h1><strong>2</strong></h1>
-		     	<h1>Diseña tus planificaciones de forma eficiente y atractiva.</h1>
-							<div class="tok">
-						
-						 			<a href="" > <h4 class="tokin-ref">Ir a Tokin, Planificador </h4></a>
-						 </div>
-				
-		     		<div class="rectangulo" id="p-1">
-		     	<h4 >Lirmi te entrega el curriculum nacional actualizado, ordenado y listo para planificar de forma anual, por unidad, semanal o diario. Ademas, tus profesores tendrán acceso a recursos pedagógicos y actividades por objetivo de aprendizaje. "Tu decides como quieres organizar tu trabajo, nosotros lo ordenamos.</h4>
-				</div>
-						<div class="row">
-
-							<div class="boton-media">
-						 <div class="col-lg-6">
-						 			 	<button class="btn btn-success btn-plani" id="#example1">Solicitar Videoconferencia</button>
-						 	</div>
-						 	<div class="col-lg-6 ">
-						 	<a class="btn btn-lg btn-play various fancybox.iframe" href="http://www.youtube.com/embed/L9szn1QQfas?autoplay=1"><img src="assets/img/play_icon.svg" alt="">Ver Video</a>
-						 	</div>
-					</div>
-					</div>
-
-					</div>
-		     	</div>
-		     		     <div class="col-lg-1 centered">
-	
-		     	</div>
-
-		     <div class="col-lg-6 centered hidden-xs ">
-		     	<div class="izq">
-						<img src="assets/img/1_planificaciones_lirmi-01.svg" class="img-responsive" alt="">
-					        
-		     	</div>
-		     	</div>
-		     	 
-
-
-							</div>	
-						
-	</div>
-			
-		</div>
-	</div>
-	<div class="section" id="section4">
-				<div class="container pt"> 
-				<div class="margin-up1">
-			<div class="row">
-
-					    <div class="col-lg-5 centered">
-		     <div class="der">
-		     	<h1><strong>3</strong></h1>
-		     	<h1>Diseña tus planificaciones de forma eficiente y atractiva.</h1>
-	
-							<div class="tok">
-						
-						 			<a href="" > <h4 class="tokin-ref">Ir a Tokin, Planificador </h4></a>
-						 </div>
-					<div class="rectangulo" id="p-1">
-		     	<h4 >Lirmi te entrega el curriculum nacional actualizado, ordenado y listo para planificar de forma anual, por unidad, semanal o diario. Ademas, tus profesores tendrán acceso a recursos pedagógicos y actividades por objetivo de aprendizaje. "Tu decides como quieres organizar tu trabajo, nosotros lo ordenamos.</h4>
-				</div>
-						<div class="row">
-
-							<div class="boton-media">
-						 <div class="col-lg-6">
-						 			 	<button class="btn btn-success btn-plani" id="#example1">Solicitar Videoconferencia</button>
-						 	</div>
-						 	<div class="col-lg-6 ">
-						 			<a class="btn btn-lg btn-play various fancybox.iframe" href="http://www.youtube.com/embed/L9szn1QQfas?autoplay=1"><img src="assets/img/play_icon.svg" alt="">Ver Video</a>
-						 	</div>
-					</div>
-					</div>
-
-					</div>
-		     	</div>
-		     		     <div class="col-lg-1 centered">
-	
-		     	</div>
-
-		     <div class="col-lg-6 centered hidden-xs ">
-		     	<div class="izq">
-					<img src="assets/img/1_planificaciones_lirmi-01.svg" class="img-responsive" alt="">        
-		     	</div>
-		     	</div>
-				</div>	
-	</div>
-	</div>
-		</div><!-- /container -->
-
-			<div class="section" id="section5">
-			<div class="container pt"> 
-				<div class="margin-up5">
-						<div class="row">
-			<div class="col-lg-3 centered">
-				</div>
-		     <div class="col-lg-6 centered">
-
-		     	<h1 class="hbene">beneficios</h1>
-		     		</div>
-		     	<div class="col-lg-3 centered">
-				</div>
-					</div>
-
-
-			<div class="row">
-
-							
-			<div class="col-lg-1 centered">
-				</div>
-		     <div class="col-lg-5 centered">
-								<div class="panel beneficio">
-
-<div class="">
-
-<div class="media signo"><div class="pull-left">
-	<img src="assets/img/01-siempreactiva.png" alt="" class="img-responsive"/>
-</div>
-
-<div class="media-body">
-</div>
-
-<div class="leyenda">
-
-	<h4 id="hbeneficios">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error magni similique dicta. Sint labore perspiciatis fugiat praesentium minus dolorem </h4>
-</div>
-</div>
-</div>
-
-
-</div>
-		     
-		     		</div>
-		     		  <div class="col-lg-5 centered">
-							<div class="panel beneficio">
-
-<div class="">
-
-<div class="media signo"><div class="pull-left"><img src="assets/img/04-email.png" alt="" class="img-responsive"/>
-</div>
-<div class="media-body">
-</div>
-
-<div class="leyenda">
-
-	<h4 id="hbeneficios">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error magni similique dicta. Sint labore perspiciatis fugiat praesentium minus dolorem </h4>
-</div>
-</div>
-</div>
-
-
-</div>
-		     
-		     		</div>
-		     	<div class="col-lg-1 centered">
-				</div>
-					</div>
-
-			<div class="row">
-
-							
-			<div class="col-lg-1 centered">
-				</div>
-		     <div class="col-lg-5 centered">
-								<div class="panel beneficio">
-
-<div class="">
-
-<div class="media signo"><div class="pull-left"><img src="assets/img/02-siempreactualizado.png" alt="" class="img-responsive"/>
-</div>
-<div class="media-body">
-</div>
-
-<div class="leyenda">
-
-	<h4 id="hbeneficios">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error magni similique dicta. Sint labore perspiciatis fugiat praesentium minus dolorem </h4>
-</div>
-</div>
-</div>
-
-
-</div>
-		     
-		     		</div>
-		     		  <div class="col-lg-5 centered">
-							<div class="panel beneficio">
-
-<div class="">
-
-<div class="media signo"><div class="pull-left"><img src="assets/img/05-telefono.png" alt="" class="img-responsive"/></div>
-
-
-<div class="media-body">
-</div>
-
-<div class="leyenda">
-
-	<h4 id="hbeneficios">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error magni similique dicta. Sint labore perspiciatis fugiat praesentium minus dolorem </h4>
-</div>
-</div>
-</div>
-
-
-</div>
-		     
-		     		</div>
-		     	<div class="col-lg-1 centered">
-				</div>
-					</div>
-		<div class="row">
-
-							
-			<div class="col-lg-1 centered">
-				</div>
-		     <div class="col-lg-5 centered">
-								<div class="panel beneficio">
-
-<div class="">
-
-<div class="media signo">
-	<div class="pull-left"><img src="assets/img/03-informacionprivada.png" alt="" class="img-responsive"/></div>
-
-<div class="media-body">
-</div>
-
-<div class="leyenda">
-
-	<h4 id="hbeneficios">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error magni similique dicta. Sint labore perspiciatis fugiat praesentium minus dolorem </h4>
-</div>
-</div>
-</div>
-
-
-</div>
-		     
-		     		</div>
-		     		  <div class="col-lg-5 centered">
-							<div class="panel beneficio">
-
-<div class="">
-
-<div class="media signo"><div class="pull-left"><img src="assets/img/06-chat.png" alt="" class="img-responsive"/></div>
-
-<div class="media-body">
-</div>
-
-<div class="leyenda">
-
-	<h4 id="hbeneficios">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error magni similique dicta. Sint labore perspiciatis fugiat praesentium minus dolorem </h4>
-</div>
-</div>
-</div>
-
-
-</div>
-		     
-		     		</div>
-		     	<div class="col-lg-1 centered">
-				</div>
-					</div>
-
-
-						<div class="row">
-			<div class="col-lg-3 centered">
-				</div>
-		     <div class="col-lg-6 centered">
-		     <div class="button">
-	<button class="btn btn-success">Solicitar Videoconferencia</button>
-	</div>
-	<div class="llamanos">
-	o puedes llamarnos al <span id="orange">333333</span>
-	</div>
-	</div>
-		     	
-		     	<div class="col-lg-3 centered">
-				</div>
-					</div>      
-</div>
-</div>
-
-</div>
-			<div class="section" id="section7">
-			<div class="container pt"> 
-				<div class="margin-up1">
-					<div class="row">
-						<div class="col-lg-12 centered" >
-						
-								<h1 >+ de 60 colegios en todo Chile, confían en Lirmi.</h1>
-
-							<div class="cole">
-								<h3>Síguenos y comparte</h3>
-							</div>
-
-						</div>
-					</div>
-					<div class="row">
-				
-							<div class="col-lg-1 centered" >
-						
-				
-						</div>
-						<div class="col-lg-10 centered" >
-						<div class="panel slides">
-													
-<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-     <li data-target="#carousel-example-generic" data-slide-to="3"></li>
-     <li data-target="#carousel-example-generic" data-slide-to="4"></li>
-  </ol>
-
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner" role="listbox">
-    <div class="item active">
-    <div class="panel utp">
-<div class="media">
-	<div class="pull-left upt-margin"><img src="assets/img/vieja-UTP.png" alt="" class="img-responsive">
-</div>
-<div class="media-body">
-</div>
-
-<div class="descripcion-utp">
-
-	<h4 id="hbeneficios">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error magni similique dicta. Sint labore perspiciatis fugiat praesentium minus dolorem </h4>
-</div>
-<div class="descripcion-utp">
-
-	<h4 id="nombre">Lorem ipsum  </h4>
-	<h4 id="nombre">Lorem ipsum  </h4>
-</div>
-</div>
-</div>
-      <div class="carousel-caption">
-      </div>
-    </div>
-     
-    <div class="item">
-    <div class="panel utp">
-<div class="media">
-	<div class="pull-left upt-margin"><img src="assets/img/vieja-UTP.png" alt="" class="img-responsive">
-</div>
-<div class="media-body">
-</div>
-
-<div class="descripcion-utp">
-
-	<h4 id="hbeneficios">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error magni similique dicta. Sint labore perspiciatis fugiat praesentium minus dolorem </h4>
-</div>
-<div class="descripcion-utp">
-
-	<h4 id="nombre">Lorem ipsum  </h4>
-	<h4 id="nombre">Lorem ipsum  </h4>
-</div>
-</div>
-</div>
-      <div class="carousel-caption">
-    
-      </div>
-    </div>
-   <div class="item">
-   <div class="panel utp">
-<div class="media">
-	<div class="pull-left upt-margin"><img src="assets/img/vieja-UTP.png" alt="" class="img-responsive">
-</div>
-<div class="media-body">
-</div>
-<div class="descripcion-utp">
-
-	<h4 id="hbeneficios">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error magni similique dicta. Sint labore perspiciatis fugiat praesentium minus dolorem </h4>
-</div>
-<div class="descripcion-utp">
-
-	<h4 id="nombre">Lorem ipsum  </h4>
-	<h4 id="nombre">Lorem ipsum  </h4>
-</div>
-</div>
-</div>
-      <div class="carousel-caption">
-    
-      </div>
-    </div>
- <div class="item">
-    	 <div class="panel utp">
-<div class="media">
-	<div class="pull-left upt-margin"><img src="assets/img/vieja-UTP.png" alt="" class="img-responsive">
-</div>
-<div class="media-body">
-</div>
-
-<div class="descripcion-utp">
-
-	<h4 id="hbeneficios">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error magni similique dicta. Sint labore perspiciatis fugiat praesentium minus dolorem </h4>
-</div>
-<div class="descripcion-utp">
-
-	<h4 id="nombre">Lorem ipsum  </h4>
-	<h4 id="nombre">Lorem ipsum  </h4>
-</div>
-</div>
-</div>
-      <div class="carousel-caption">
-    
-      </div>
-    </div>
-    <div class="item">
-   <div class="panel utp">
-<div class="media">
-	<div class="pull-left upt-margin"><img src="assets/img/vieja-UTP.png" alt="" class="img-responsive">
-</div>
-<div class="media-body">
-</div>
-
-<div class="descripcion-utp">
-
-	<h4 id="hbeneficios">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error magni similique dicta. Sint labore perspiciatis fugiat praesentium minus dolorem </h4>
-</div>
-<div class="descripcion-utp">
-	<h4 id="nombre">Lorem ipsum  </h4>
-	<h4 id="nombre">Lorem ipsum  </h4>
-
-</div>
-</div>
-</div>
-      <div class="carousel-caption">
-    
-      </div>
-    </div>
-  </div>
-</div>		
-						</div>
-						</div>							
-									<div class="col-lg-1 centered" >
-</div>
-					</div>
-						<div class="row">
-						
-						<div class="col-lg-12 centered" >
-							<div class="colegios">
-	<div class="caja">  <img src="assets/img/06-Colegio-Particular-Santa-Maria.png" alt="" class="img-responsive" data-toggle="tooltip" data-placement="bottom" title="Colegio Particular Santa Maria"></div>
-	<div class="caja">  <img src="assets/img/04-Liceo-Ramon-Freire.png
-		" alt="" class="img-responsive" data-toggle="tooltip" data-placement="bottom" title="Liceo Ramon Freire"></div>
-	<div class="caja">  <img src="assets/img/01-Colegio-Emilia-Urruatia.png" alt="" class="img-responsive" data-toggle="tooltip" data-placement="bottom" title="Colegio Emilia Urruatia"></div>
-	<div class="caja">  <img src="assets/img/11-Colegio-El-Arrayan.png" alt="" class="img-responsive" data-toggle="tooltip" data-placement="bottom" title="Colegio El Arrayan"></div>
-	<div class="caja">  <img src="assets/img/08-Liceo-Mariano-Latorre.png" alt="" class="img-responsive" data-toggle="tooltip" data-placement="bottom" title="Liceo Mariano Latorre"></div>
-	<div class="caja">  <img src="assets/img/10-Colegio-El-Pilar.png" alt="" class="img-responsive" data-toggle="tooltip" data-placement="bottom" title="Colegio El Pilar"></div>
-	<div class="caja">  <img src="assets/img/02-Colegio-Dr-Guillermo-Velasco-Barros.png" alt="" class="img-responsive" data-toggle="tooltip" data-placement="bottom" title="Colegio Dr-Guillermo Velasco Barros" ></div>
-	<div class="caja">  <img src="assets/img/05-Colegio-Metodista-Temuco.png" alt="" class="img-responsive" data-toggle="tooltip" data-placement="bottom" title="Colegio Metodista Temuco"></div>
-	<div class="caja">  <img src="assets/img/07-Liceo-Jorge-Alessandri.png" alt="" class="img-responsive" data-toggle="tooltip" data-placement="bottom" title="Liceo Jorge Alessandri"></div>
-	<div class="caja">  <img src="assets/img/03-Colegio-Domingo-Faustino-Sarmiento.png" alt="" class="img-responsive" data-toggle="tooltip" data-placement="bottom" title="Colegio Domingo Faustino Sarmiento"></div>
-</div>
-						</div>
-							
-					</div>
-					<div class="row">
-						<div class="col-12 centered">
-							   <div class="button">
-	<button class="btn btn-success">Solicitar Videoconferencia</button>
-	</div>
-						</div>
-					</div>
-	</div>
-</div>
-</div>
-		<div class="section" id="section6">
-			<div class="container pt"> 
-				<div class="margin-up6">
-			<div class="row" id="pcontent">
-					
-								<div class="col-lg-3"></div>
-								<div class=" col-lg-3"><div class="parrafo"><h2>Historia</h2>
-									<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus ipsam voluptatem nostrum, exercitationem placeat fugit vitae. Magni quasi, numquam nemo rem eum!</h4>
-								</div>	
-							</div>
-							<div class=" col-lg-3">
-								<div class="parrafo">
-									<h2>Propósito</h2>
-									<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam fuga libero a. Consequatur non nam veritatis ex, nostrum iste possimus .</h4>
-								</div>
-							</div>
-							<div class="  col-lg-3"></div>
-						</div>
-			
-	<div class="row">
-		<div class="col-lg-1"></div>
-		<div class="col-lg-10 centered">
-			<div class="equipo">
-				<ul >
-					<li class="team"><img src="assets/img/andres_icon-01.png" class="img-circle"  data-toggle="tooltip" data-placement="bottom" title="Tooltip on left"/></li>
-					<li class="team"><img src="assets/img/cristian_icon-01.png" class="img-circle" data-toggle="tooltip" data-placement="bottom" title="Tooltip on left"/></li>
-					<li class="team"><img src="assets/img/emerson_icon-01.png" class="img-circle" data-toggle="tooltip" data-placement="bottom" title="Tooltip on left"/></li>
-					<li class="team"><img src="assets/img/felipe_icon-01.png" class="img-circle" data-toggle="tooltip" data-placement="bottom" title="Tooltip on left"/></li>
-					<li class="team"><img src="assets/img/isabel_icon-01.png" class="img-circle" data-toggle="tooltip" data-placement="bottom" title="Tooltip on left"/> </li>
-					<li class="team"><img src="assets/img/Jorge_icon.png" class="img-circle" data-toggle="tooltip" data-placement="bottom" title="Tooltip on left"/> </li>
-					<li class="team"><img src="assets/img/marcelo_icon-01.png" class="img-circle" data-toggle="tooltip" data-placement="bottom" title="Tooltip on left"/> </li>
-					<li class="team"><img src="assets/img/marcelo_icon-01.png" class="img-circle" data-toggle="tooltip" data-placement="bottom" title="Tooltip on left"/> </li>
-				</ul>
-			
-			</div>
-		</div>
-		<div class="col-lg-1"></div>
-	</div>
-	<div class="row">
-	<div class="col-lg-1"></div>
-	<div class="col-lg-10 centered">
-		<div class="equipo">
-			<ul >
-				<li class="team"><img src="assets/img/andres_icon-01.png" class="img-circle" data-toggle="tooltip" data-placement="bottom" title="Tooltip on left"/></li>
-				<li class="team"><img src="assets/img/cristian_icon-01.png" class="img-circle" class="img-circle" data-toggle="tooltip" data-placement="bottom" title="Tooltip on left"/></li>
-				<li class="team"><img src="assets/img/emerson_icon-01.png" class="img-circle" data-toggle="tooltip" data-placement="bottom" title="Tooltip on left"/></li>
-				<li class="team"><img src="assets/img/felipe_icon-01.png" class="img-circle" data-toggle="tooltip" data-placement="bottom" title="Tooltip on left"/></li>
-				<li class="team"><img src="assets/img/isabel_icon-01.png" class="img-circle" data-toggle="tooltip" data-placement="bottom" title="Tooltip on left"/> </li>
-				<li class="team"><img src="assets/img/Jorge_icon.png" class="img-circle" data-toggle="tooltip" data-placement="bottom" title="Tooltip on left"/> </li>
-				<li class="team"><img src="assets/img/marcelo_icon-01.png" class="img-circle" data-toggle="tooltip" data-placement="bottom" title="Tooltip on left"/> </li>
-				<li class="team"><img src="assets/img/marcelo_icon-01.png" class="img-circle" data-toggle="tooltip" data-placement="bottom" title="Tooltip on left"/> </li>
-			</ul>
-		
-		</div>
-	</div>
-	<div class="col-lg-1"></div>
-	</div>
-	<div class="row" id="redes">
-		<div class="col-lg-2">
-			<img src="assets/img/incubatec_logo.png" class=""/>
-		</div>
-		<div class="col-lg-2"><img src="assets/img/corfo_logo.png" class=""/></div>
-		<div class="col-lg-5"></div>	
-		<div class="col-lg-3">
-			<div class="social">
-				<div class="social1"><a href=""><img src="assets/img/facebook_icon.svg" class=""/></a> </div>
-				<div class="social1"> <a href=""><img src="assets/img/twitter_icon.svg" class=""/></a> </div>
-				<div class="social1"> <a href=""><img src="assets/img/youtube_icon.svg" class=""/></a> </div>
-			</div>
-		</div>
-	</div>
-</div>
-	</div>
-	</div>
-
-	</div>
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    		
-    		<script type="text/javascript" src="assets/js/jquery.fullPage.js"></script>
-          <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
-					<script type="text/javascript" src="assets/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-		    <script type="text/javascript" src="assets/fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
-		    <script type="text/javascript" src="assets/fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
-		       <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="assets/js/main.js"></script>
-  </body>
+        <!-- +++++ Projects Section +++++ -->
+        <div id="fullpage">
+            <div class="section" id="section1">
+                <div class="container pt">
+                    <div class="margin-up">
+                        <div class="row">
+                            <div class="col-lg-3 centered">
+                            </div>
+                            <div class="col-lg-6 centered">
+                                <h1>Toda la gestión curricular de tu establecimiento en un solo lugar</h1>
+                            </div>
+                            <div class="col-lg-3 centered">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-3 centered">
+                            </div>
+                            <div class="col-lg-6 centered">
+                                <div class="button">
+                                    <button class="btn btn-success "  data-toggle="modal" data-target="#myModal" >Solicitar Videoconferencia</button>
+                                </div>
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+                                Launch demo modal
+                                </button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                                <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                ...
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                                <button type="button" class="btn btn-primary">Save changes</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 centered">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-3 centered">
+                            </div>
+                            <div class="col-lg-6 centered">
+                                <div class="descripcion-planificacion">
+                                </div>
+                            </div>
+                            <div class="col-lg-3 centered">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4 centered">
+                            </div>
+                            <div class="col-lg-4 centered">
+                                <div class="video">
+                                    <a class="btn btn-lg btn-play various fancybox.iframe" href="http://www.youtube.com/embed/L9szn1QQfas?autoplay=1"><img src="assets/img/play_icon.svg" alt="">Ver Video</a>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 centered">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /container -->
+            <div class="section" id="section2">
+                <div class="container pt">
+                    <div class="margin-up1">
+                        <div class="row">
+                            <div class="col-lg-5 centered">
+                                <div class="der">
+                                    <h1><strong>1</strong></h1>
+                                    <h1>Diseña tus planificaciones de forma eficiente y atractiva.</h1>
+                                    <div class="tok">
+                                        <a href="" >
+                                            <h4 class="tokin-ref">Ir a Tokin, Planificador </h4>
+                                        </a>
+                                    </div>
+                                    <div class="rectangulo" id="p-1">
+                                        <h4 >Lirmi te entrega el curriculum nacional actualizado, ordenado y listo para planificar de forma anual, por unidad, semanal o diario. Ademas, tus profesores tendrán acceso a recursos pedagógicos y actividades por objetivo de aprendizaje. "Tu decides como quieres organizar tu trabajo, nosotros lo ordenamos.</h4>
+                                    </div>
+                                    <div class="row">
+                                        <div class="boton-media">
+                                            <div class="col-lg-6">
+                                                <button class="btn btn-success btn-plani" id="#example1">Solicitar Videoconferencia</button>
+                                            </div>
+                                            <div class="col-lg-6 ">
+                                                <a class="btn btn-lg btn-play various fancybox.iframe" href="http://www.youtube.com/embed/L9szn1QQfas?autoplay=1"><img src="assets/img/play_icon.svg" alt="">Ver Video</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-1 centered">
+                            </div>
+                            <div class="col-lg-6 centered hidden-xs ">
+                                <div class="izq">
+                                    <img src="assets/img/1_planificaciones_lirmi-01.svg" class="img-responsive" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /container -->
+            <div class="section" id="section3">
+                <div class="container pt">
+                    <div class="margin-up1">
+                        <div class="row">
+                            <div class="col-lg-5 centered">
+                                <div class="der">
+                                    <h1><strong>2</strong></h1>
+                                    <h1>Diseña tus planificaciones de forma eficiente y atractiva.</h1>
+                                    <div class="tok">
+                                        <a href="" >
+                                            <h4 class="tokin-ref">Ir a Tokin, Planificador </h4>
+                                        </a>
+                                    </div>
+                                    <div class="rectangulo" id="p-1">
+                                        <h4 >Lirmi te entrega el curriculum nacional actualizado, ordenado y listo para planificar de forma anual, por unidad, semanal o diario. Ademas, tus profesores tendrán acceso a recursos pedagógicos y actividades por objetivo de aprendizaje. "Tu decides como quieres organizar tu trabajo, nosotros lo ordenamos.</h4>
+                                    </div>
+                                    <div class="row">
+                                        <div class="boton-media">
+                                            <div class="col-lg-6">
+                                                <button class="btn btn-success btn-plani" id="#example1">Solicitar Videoconferencia</button>
+                                            </div>
+                                            <div class="col-lg-6 ">
+                                                <a class="btn btn-lg btn-play various fancybox.iframe" href="http://www.youtube.com/embed/L9szn1QQfas?autoplay=1"><img src="assets/img/play_icon.svg" alt="">Ver Video</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-1 centered">
+                            </div>
+                            <div class="col-lg-6 centered hidden-xs ">
+                                <div class="izq">
+                                    <img src="assets/img/1_planificaciones_lirmi-01.svg" class="img-responsive" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section" id="section4">
+                <div class="container pt">
+                    <div class="margin-up1">
+                        <div class="row">
+                            <div class="col-lg-5 centered">
+                                <div class="der">
+                                    <h1><strong>3</strong></h1>
+                                    <h1>Diseña tus planificaciones de forma eficiente y atractiva.</h1>
+                                    <div class="tok">
+                                        <a href="" >
+                                            <h4 class="tokin-ref">Ir a Tokin, Planificador </h4>
+                                        </a>
+                                    </div>
+                                    <div class="rectangulo" id="p-1">
+                                        <h4 >Lirmi te entrega el curriculum nacional actualizado, ordenado y listo para planificar de forma anual, por unidad, semanal o diario. Ademas, tus profesores tendrán acceso a recursos pedagógicos y actividades por objetivo de aprendizaje. "Tu decides como quieres organizar tu trabajo, nosotros lo ordenamos.</h4>
+                                    </div>
+                                    <div class="row">
+                                        <div class="boton-media">
+                                            <div class="col-lg-6">
+                                                <button class="btn btn-success btn-plani" id="#example1">Solicitar Videoconferencia</button>
+                                            </div>
+                                            <div class="col-lg-6 ">
+                                                <a class="btn btn-lg btn-play various fancybox.iframe" href="http://www.youtube.com/embed/L9szn1QQfas?autoplay=1"><img src="assets/img/play_icon.svg" alt="">Ver Video</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-1 centered">
+                            </div>
+                            <div class="col-lg-6 centered hidden-xs ">
+                                <div class="izq">
+                                    <img src="assets/img/1_planificaciones_lirmi-01.svg" class="img-responsive" alt="">        
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /container -->
+            <div class="section" id="section5">
+                <div class="container pt">
+                    <div class="margin-up5">
+                        <div class="row">
+                            <div class="col-lg-3 centered">
+                            </div>
+                            <div class="col-lg-6 centered">
+                                <h1 class="hbene">beneficios</h1>
+                            </div>
+                            <div class="col-lg-3 centered">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-1 centered">
+                            </div>
+                            <div class="col-lg-5 centered">
+                                <div class="panel beneficio">
+                                    <div class="">
+                                        <div class="media signo">
+                                            <div class="pull-left">
+                                                <img src="assets/img/01-siempreactiva.png" alt="" class="img-responsive"/>
+                                            </div>
+                                            <div class="media-body"></div>
+                                            <div class="leyenda">
+                                                <h4 id="hbeneficios">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error magni similique dicta. Sint labore perspiciatis fugiat praesentium minus dolorem </h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-5 centered">
+                                <div class="panel beneficio">
+                                    <div class="">
+                                        <div class="media signo">
+                                            <div class="pull-left"><img src="assets/img/04-email.png" alt="" class="img-responsive"/></div>
+                                            <div class="media-body"></div>
+                                            <div class="leyenda">
+                                                <h4 id="hbeneficios">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error magni similique dicta. Sint labore perspiciatis fugiat praesentium minus dolorem </h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-1 centered">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-1 centered">
+                            </div>
+                            <div class="col-lg-5 centered">
+                                <div class="panel beneficio">
+                                    <div class="">
+                                        <div class="media signo">
+                                            <div class="pull-left"><img src="assets/img/02-siempreactualizado.png" alt="" class="img-responsive"/></div>
+                                            <div class="media-body"></div>
+                                            <div class="leyenda">
+                                                <h4 id="hbeneficios">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error magni similique dicta. Sint labore perspiciatis fugiat praesentium minus dolorem </h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-5 centered">
+                                <div class="panel beneficio">
+                                    <div class="">
+                                        <div class="media signo">
+                                            <div class="pull-left"><img src="assets/img/05-telefono.png" alt="" class="img-responsive"/></div>
+                                            <div class="media-body"></div>
+                                            <div class="leyenda">
+                                                <h4 id="hbeneficios">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error magni similique dicta. Sint labore perspiciatis fugiat praesentium minus dolorem </h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-1 centered">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-1 centered">
+                            </div>
+                            <div class="col-lg-5 centered">
+                                <div class="panel beneficio">
+                                    <div class="">
+                                        <div class="media signo">
+                                            <div class="pull-left"><img src="assets/img/03-informacionprivada.png" alt="" class="img-responsive"/></div>
+                                            <div class="media-body"></div>
+                                            <div class="leyenda">
+                                                <h4 id="hbeneficios">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error magni similique dicta. Sint labore perspiciatis fugiat praesentium minus dolorem </h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-5 centered">
+                                <div class="panel beneficio">
+                                    <div class="">
+                                        <div class="media signo">
+                                            <div class="pull-left"><img src="assets/img/06-chat.png" alt="" class="img-responsive"/></div>
+                                            <div class="media-body"></div>
+                                            <div class="leyenda">
+                                                <h4 id="hbeneficios">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error magni similique dicta. Sint labore perspiciatis fugiat praesentium minus dolorem </h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-1 centered">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-3 centered">
+                            </div>
+                            <div class="col-lg-6 centered">
+                                <div class="button">
+                                    <button class="btn btn-success">Solicitar Videoconferencia</button>
+                                </div>
+                                <div class="llamanos">
+                                    o puedes llamarnos al <span id="orange">333333</span>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 centered">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section" id="section7">
+                <div class="container pt">
+                    <div class="margin-up1">
+                        <div class="row">
+                            <div class="col-lg-12 centered" >
+                                <h1 >+ de 60 colegios en todo Chile, confían en Lirmi.</h1>
+                                <div class="cole">
+                                    <h3>Síguenos y comparte</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-1 centered" >
+                            </div>
+                            <div class="col-lg-10 centered" >
+                                <div class="panel slides">
+                                    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                                        <!-- Indicators -->
+                                        <ol class="carousel-indicators">
+                                            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                                            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                                            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                                            <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                                            <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+                                        </ol>
+                                        <!-- Wrapper for slides -->
+                                        <div class="carousel-inner" role="listbox">
+                                            <div class="item active">
+                                                <div class="panel utp">
+                                                    <div class="media">
+                                                        <div class="pull-left upt-margin"><img src="assets/img/vieja-UTP.png" alt="" class="img-responsive"></div>
+                                                        <div class="media-body"></div>
+                                                        <div class="descripcion-utp">
+                                                            <h4 id="hbeneficios">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error magni similique dicta. Sint labore perspiciatis fugiat praesentium minus dolorem </h4>
+                                                        </div>
+                                                        <div class="descripcion-utp">
+                                                            <h4 id="nombre">Lorem ipsum  </h4>
+                                                            <h4 id="nombre">Lorem ipsum  </h4>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="carousel-caption">
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="panel utp">
+                                                    <div class="media">
+                                                        <div class="pull-left upt-margin"><img src="assets/img/vieja-UTP.png" alt="" class="img-responsive"></div>
+                                                        <div class="media-body"></div>
+                                                        <div class="descripcion-utp">
+                                                            <h4 id="hbeneficios">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error magni similique dicta. Sint labore perspiciatis fugiat praesentium minus dolorem </h4>
+                                                        </div>
+                                                        <div class="descripcion-utp">
+                                                            <h4 id="nombre">Lorem ipsum  </h4>
+                                                            <h4 id="nombre">Lorem ipsum  </h4>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="carousel-caption">
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="panel utp">
+                                                    <div class="media">
+                                                        <div class="pull-left upt-margin"><img src="assets/img/vieja-UTP.png" alt="" class="img-responsive"></div>
+                                                        <div class="media-body"></div>
+                                                        <div class="descripcion-utp">
+                                                            <h4 id="hbeneficios">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error magni similique dicta. Sint labore perspiciatis fugiat praesentium minus dolorem </h4>
+                                                        </div>
+                                                        <div class="descripcion-utp">
+                                                            <h4 id="nombre">Lorem ipsum  </h4>
+                                                            <h4 id="nombre">Lorem ipsum  </h4>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="carousel-caption">
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="panel utp">
+                                                    <div class="media">
+                                                        <div class="pull-left upt-margin"><img src="assets/img/vieja-UTP.png" alt="" class="img-responsive"></div>
+                                                        <div class="media-body"></div>
+                                                        <div class="descripcion-utp">
+                                                            <h4 id="hbeneficios">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error magni similique dicta. Sint labore perspiciatis fugiat praesentium minus dolorem </h4>
+                                                        </div>
+                                                        <div class="descripcion-utp">
+                                                            <h4 id="nombre">Lorem ipsum  </h4>
+                                                            <h4 id="nombre">Lorem ipsum  </h4>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="carousel-caption">
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="panel utp">
+                                                    <div class="media">
+                                                        <div class="pull-left upt-margin"><img src="assets/img/vieja-UTP.png" alt="" class="img-responsive"></div>
+                                                        <div class="media-body"></div>
+                                                        <div class="descripcion-utp">
+                                                            <h4 id="hbeneficios">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error magni similique dicta. Sint labore perspiciatis fugiat praesentium minus dolorem </h4>
+                                                        </div>
+                                                        <div class="descripcion-utp">
+                                                            <h4 id="nombre">Lorem ipsum  </h4>
+                                                            <h4 id="nombre">Lorem ipsum  </h4>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="carousel-caption">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-1 centered" ></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12 centered" >
+                                <div class="colegios">
+                                    <div class="caja">  <img src="assets/img/06-Colegio-Particular-Santa-Maria.png" alt="" class="img-responsive" data-toggle="tooltip" data-placement="bottom" title="Colegio Particular Santa Maria"></div>
+                                    <div class="caja">  <img src="assets/img/04-Liceo-Ramon-Freire.png
+                                        " alt="" class="img-responsive" data-toggle="tooltip" data-placement="bottom" title="Liceo Ramon Freire"></div>
+                                    <div class="caja">  <img src="assets/img/01-Colegio-Emilia-Urruatia.png" alt="" class="img-responsive" data-toggle="tooltip" data-placement="bottom" title="Colegio Emilia Urruatia"></div>
+                                    <div class="caja">  <img src="assets/img/11-Colegio-El-Arrayan.png" alt="" class="img-responsive" data-toggle="tooltip" data-placement="bottom" title="Colegio El Arrayan"></div>
+                                    <div class="caja">  <img src="assets/img/08-Liceo-Mariano-Latorre.png" alt="" class="img-responsive" data-toggle="tooltip" data-placement="bottom" title="Liceo Mariano Latorre"></div>
+                                    <div class="caja">  <img src="assets/img/10-Colegio-El-Pilar.png" alt="" class="img-responsive" data-toggle="tooltip" data-placement="bottom" title="Colegio El Pilar"></div>
+                                    <div class="caja">  <img src="assets/img/02-Colegio-Dr-Guillermo-Velasco-Barros.png" alt="" class="img-responsive" data-toggle="tooltip" data-placement="bottom" title="Colegio Dr-Guillermo Velasco Barros" ></div>
+                                    <div class="caja">  <img src="assets/img/05-Colegio-Metodista-Temuco.png" alt="" class="img-responsive" data-toggle="tooltip" data-placement="bottom" title="Colegio Metodista Temuco"></div>
+                                    <div class="caja">  <img src="assets/img/07-Liceo-Jorge-Alessandri.png" alt="" class="img-responsive" data-toggle="tooltip" data-placement="bottom" title="Liceo Jorge Alessandri"></div>
+                                    <div class="caja">  <img src="assets/img/03-Colegio-Domingo-Faustino-Sarmiento.png" alt="" class="img-responsive" data-toggle="tooltip" data-placement="bottom" title="Colegio Domingo Faustino Sarmiento"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 centered">
+                                <div class="button">
+                                    <button class="btn btn-success">Solicitar Videoconferencia</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section" id="section6">
+                <div class="container pt">
+                    <div class="margin-up6">
+                        <div class="row" id="pcontent">
+                            <div class="col-lg-3"></div>
+                            <div class=" col-lg-3">
+                                <div class="parrafo">
+                                    <h2>Historia</h2>
+                                    <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus ipsam voluptatem nostrum, exercitationem placeat fugit vitae. Magni quasi, numquam nemo rem eum!</h4>
+                                </div>
+                            </div>
+                            <div class=" col-lg-3">
+                                <div class="parrafo">
+                                    <h2>Propósito</h2>
+                                    <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam fuga libero a. Consequatur non nam veritatis ex, nostrum iste possimus .</h4>
+                                </div>
+                            </div>
+                            <div class="  col-lg-3"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-1"></div>
+                            <div class="col-lg-10 centered">
+                                <div class="equipo">
+                                    <ul >
+                                        <li class="team"><img src="assets/img/andres_icon-01.png" class="img-circle"  data-toggle="tooltip" data-placement="bottom" title="Tooltip on left"/></li>
+                                        <li class="team"><img src="assets/img/cristian_icon-01.png" class="img-circle" data-toggle="tooltip" data-placement="bottom" title="Tooltip on left"/></li>
+                                        <li class="team"><img src="assets/img/emerson_icon-01.png" class="img-circle" data-toggle="tooltip" data-placement="bottom" title="Tooltip on left"/></li>
+                                        <li class="team"><img src="assets/img/felipe_icon-01.png" class="img-circle" data-toggle="tooltip" data-placement="bottom" title="Tooltip on left"/></li>
+                                        <li class="team"><img src="assets/img/isabel_icon-01.png" class="img-circle" data-toggle="tooltip" data-placement="bottom" title="Tooltip on left"/> </li>
+                                        <li class="team"><img src="assets/img/Jorge_icon.png" class="img-circle" data-toggle="tooltip" data-placement="bottom" title="Tooltip on left"/> </li>
+                                        <li class="team"><img src="assets/img/marcelo_icon-01.png" class="img-circle" data-toggle="tooltip" data-placement="bottom" title="Tooltip on left"/> </li>
+                                        <li class="team"><img src="assets/img/marcelo_icon-01.png" class="img-circle" data-toggle="tooltip" data-placement="bottom" title="Tooltip on left"/> </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-1"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-1"></div>
+                            <div class="col-lg-10 centered">
+                                <div class="equipo">
+                                    <ul >
+                                        <li class="team"><img src="assets/img/andres_icon-01.png" class="img-circle" data-toggle="tooltip" data-placement="bottom" title="Tooltip on left"/></li>
+                                        <li class="team"><img src="assets/img/cristian_icon-01.png" class="img-circle" class="img-circle" data-toggle="tooltip" data-placement="bottom" title="Tooltip on left"/></li>
+                                        <li class="team"><img src="assets/img/emerson_icon-01.png" class="img-circle" data-toggle="tooltip" data-placement="bottom" title="Tooltip on left"/></li>
+                                        <li class="team"><img src="assets/img/felipe_icon-01.png" class="img-circle" data-toggle="tooltip" data-placement="bottom" title="Tooltip on left"/></li>
+                                        <li class="team"><img src="assets/img/isabel_icon-01.png" class="img-circle" data-toggle="tooltip" data-placement="bottom" title="Tooltip on left"/> </li>
+                                        <li class="team"><img src="assets/img/Jorge_icon.png" class="img-circle" data-toggle="tooltip" data-placement="bottom" title="Tooltip on left"/> </li>
+                                        <li class="team"><img src="assets/img/marcelo_icon-01.png" class="img-circle" data-toggle="tooltip" data-placement="bottom" title="Tooltip on left"/> </li>
+                                        <li class="team"><img src="assets/img/marcelo_icon-01.png" class="img-circle" data-toggle="tooltip" data-placement="bottom" title="Tooltip on left"/> </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-1"></div>
+                        </div>
+                        <div class="row" id="redes">
+                            <div class="col-lg-2">
+                                <img src="assets/img/incubatec_logo.png" class=""/>
+                            </div>
+                            <div class="col-lg-2"><img src="assets/img/corfo_logo.png" class=""/></div>
+                            <div class="col-lg-5"></div>
+                            <div class="col-lg-3">
+                                <div class="social">
+                                    <div class="social1"><a href=""><img src="assets/img/facebook_icon.svg" class=""/></a> </div>
+                                    <div class="social1"> <a href=""><img src="assets/img/twitter_icon.svg" class=""/></a> </div>
+                                    <div class="social1"> <a href=""><img src="assets/img/youtube_icon.svg" class=""/></a> </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bootstrap core JavaScript
+            ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+        <script type="text/javascript" src="assets/js/jquery.fullPage.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="assets/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+        <script type="text/javascript" src="assets/fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+        <script type="text/javascript" src="assets/fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+        <!-- Latest compiled and minified JavaScript -->
+        <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="assets/js/main.js"></script>
+    </body>
 </html>
